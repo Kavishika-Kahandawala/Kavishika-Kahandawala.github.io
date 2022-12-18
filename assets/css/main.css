@@ -1,4 +1,3 @@
-@import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
 html,
@@ -4079,6 +4078,92 @@ body.is-menu-visible #menu .inner {
 	opacity: 1;
 	visibility: visible;
 }
+
+
+/* Contact */
+
+#about {
+	border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+	overflow-x: hidden;
+}
+
+#about>.inner {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	padding: 0 !important;
+}
+
+#about>.inner> :nth-child(2n - 1) {
+	padding: 4em 3em 2em 0;
+	border-right: solid 1px rgba(212, 212, 255, 0.1);
+	width: 60%;
+}
+
+#about>.inner> :nth-child(2n) {
+	padding-left: 3em;
+	width: 40%;
+}
+
+#about>.inner>.split {
+	padding: 0;
+}
+
+#about>.inner>.split>* {
+	padding: 3em 0 1em 3em;
+	position: relative;
+}
+
+#about>.inner>.split>*:before {
+	border-top: solid 1px rgba(212, 212, 255, 0.1);
+	content: '';
+	display: block;
+	margin-left: -3em;
+	position: absolute;
+	top: 0;
+	width: calc(100vw + 3em);
+}
+
+#about>.inner>.split> :first-child:before {
+	display: none;
+}
+
+@media screen and (max-width: 980px) {
+
+	#about>.inner {
+		display: block;
+	}
+
+	#about>.inner> :nth-child(2n - 1) {
+		padding: 4em 0 2em 0;
+		border-right: 0;
+		width: 100%;
+	}
+
+	#about>.inner> :nth-child(2n) {
+		padding-left: 0;
+		width: 100%;
+	}
+
+	#about>.inner>.split>* {
+		padding: 3em 0 1em 0;
+	}
+
+	#about>.inner>.split> :first-child:before {
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 736px) {
+
+	#about>.inner> :nth-child(2n - 1) {
+		padding: 3em 0 1em 0;
+	}
+
+}
+
 
 #btn-back-to-top {
 	position: fixed;
